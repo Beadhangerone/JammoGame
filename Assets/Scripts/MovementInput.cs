@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 //This script requires you to have setup your animator with 3 parameters, "InputMagnitude", "InputX", "InputZ"
 //With a blend tree to control the inputmagnitude and allow blending between animations.
@@ -12,7 +13,7 @@ public class MovementInput : MonoBehaviour {
     [Space]
 
 	public float InputX;
-	public float InputZ;
+	public float InputY;
 	public Vector3 desiredMoveDirection;
 	public bool blockRotationPlayer;
 	public float desiredRotationSpeed = 0.1f;
@@ -63,10 +64,7 @@ public class MovementInput : MonoBehaviour {
     }
 
     void PlayerMoveAndRotation() {
-		InputX = Input.GetAxis ("Horizontal");
-		InputZ = Input.GetAxis ("Vertical");
-
-		var camera = Camera.main;
+	    var camera = Camera.main;
 		var forward = cam.transform.forward;
 		var right = cam.transform.right;
 
@@ -76,7 +74,7 @@ public class MovementInput : MonoBehaviour {
 		forward.Normalize ();
 		right.Normalize ();
 
-		desiredMoveDirection = forward * InputZ + right * InputX;
+		desiredMoveDirection = forward * InputY + right * InputX;
 
 		if (blockRotationPlayer == false) {
 			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (desiredMoveDirection), desiredRotationSpeed);
@@ -89,28 +87,27 @@ public class MovementInput : MonoBehaviour {
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(pos), desiredRotationSpeed);
     }
 
-    public void RotateToCamera(Transform t)
+    // public void RotateToCamera(Transform t)
+    // {
+    //
+    //     var camera = Camera.main;
+    //     var forward = cam.transform.forward;
+    //     var right = cam.transform.right;
+    //
+    //     desiredMoveDirection = forward;
+    //
+    //     t.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(desiredMoveDirection), desiredRotationSpeed);
+    // }
+
+    private void OnMove(InputValue movement)
     {
-
-        var camera = Camera.main;
-        var forward = cam.transform.forward;
-        var right = cam.transform.right;
-
-        desiredMoveDirection = forward;
-
-        t.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(desiredMoveDirection), desiredRotationSpeed);
+	    Vector2 _movementVect = movement.Get<Vector2>();
+	    InputX = _movementVect.x;
+	    InputY = _movementVect.y;
     }
-
 	void InputMagnitude() {
-		//Calculate Input Vectors
-		InputX = Input.GetAxis ("Horizontal");
-		InputZ = Input.GetAxis ("Vertical");
-
-		//anim.SetFloat ("InputZ", InputZ, VerticalAnimTime, Time.deltaTime * 2f);
-		//anim.SetFloat ("InputX", InputX, HorizontalAnimSmoothTime, Time.deltaTime * 2f);
-
 		//Calculate the Input Magnitude
-		Speed = new Vector2(InputX, InputZ).sqrMagnitude;
+		Speed = new Vector2(InputX, InputY).sqrMagnitude;
 
         //Physically move player
 

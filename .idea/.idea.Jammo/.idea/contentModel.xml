@@ -11,6 +11,7 @@
         <e p="Scripts" t="Include">
           <e p="CharacterSkinController.cs" t="Include" />
           <e p="MovementInput.cs" t="Include" />
+          <e p="MyMoveInput.cs" t="Include" />
         </e>
         <e p="Template" t="Include">
           <e p="Scripts" t="Include">

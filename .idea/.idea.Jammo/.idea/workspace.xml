@@ -20,14 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a5ab1b1-aaf4-43b4-b6da-236d4a40b5f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jammo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jammo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jammo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jammo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Prefabs/Jammo_Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Prefabs/Jammo_Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Scripts/CharacterSkinController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Scripts/CharacterSkinController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Scripts/MovementInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Scripts/MovementInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Input/Jammo.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/Jammo.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/AnimatorController_Jamo.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/AnimatorController_Jamo.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Battle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Battle.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Happy.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Happy.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Relaxed.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Relaxed.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Scared.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Scared.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Running.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Running.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Walking.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Walking.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Falling To Landing.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Falling To Landing.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Fist Pump.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Fist Pump.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Jump.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Jump.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Standing.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Standing.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Victory Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Victory Idle.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/JammoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JammoScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,19 +46,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E147BE8A-8A8F-49C6-A0A4-A64CD2E2F53A/8b/60a8d55f/Animator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../002/My project/Assets/Scripts/CharacterControllerScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D3B66F0A-D4E3-4A55-B6EF-91AB84878193/9d/5c3e32bf/Camera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.3.0/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Jammo-Character/Scripts/MovementInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MovementInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MyMoveInput.cs" />
       </list>
     </option>
   </component>
+  <component name="ProjectId" id="27cP3D2h6rzqqDmARYlyXmEG4jN" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -59,6 +80,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.environmentSetup" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -81,8 +105,20 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a5ab1b1-aaf4-43b4-b6da-236d4a40b5f3" name="Default Changelist" comment="" />
+      <created>1649616203436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649616203436</updated>
+      <workItem from="1649616221295" duration="5141000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />

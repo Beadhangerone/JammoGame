@@ -20,24 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a5ab1b1-aaf4-43b4-b6da-236d4a40b5f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jammo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jammo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jammo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jammo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Input/Jammo.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/Jammo.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/AnimatorController_Jamo.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/AnimatorController_Jamo.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Battle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Battle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Happy.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Happy.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Relaxed.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Relaxed.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Scared.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Idle_Scared.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Running.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Running.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Walking.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Default/a_Walking.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Falling To Landing.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Falling To Landing.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Fist Pump.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Fist Pump.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Jump.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Jump.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Standing.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Standing.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Victory Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Animations/Victory Idle.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/JammoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JammoScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,8 +96,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649616203436</updated>
-      <workItem from="1649616221295" duration="5141000" />
+      <workItem from="1649616221295" duration="5235000" />
+      <workItem from="1649680937513" duration="3190000" />
     </task>
+    <task id="LOCAL-00001" summary="walk functionality">
+      <created>1649622259698</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649622259698</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +126,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="walk functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="walk functionality" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="617" y="276" key="Vcs.Push.Dialog.v2" timestamp="1649622262938">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="276" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1649622262938" />
     <state x="430" y="145" key="search.everywhere.popup" timestamp="1649059463887">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

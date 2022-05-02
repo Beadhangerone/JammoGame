@@ -72,45 +72,56 @@ public class MyMoveInput : MonoBehaviour
     }
     void Update()
     {
+
         _horizontalVelocity = new Vector2(_inputX, _inputY).sqrMagnitude;
 
-        var forward = _mainCameraTransform.forward;
-        var right = _mainCameraTransform.right;
+        HandleAnimation();
+        HandleMovement();
+        
+    }
+
+    private void HandleGravity()
+    {
         var up = _mainCameraTransform.up;
-            
-        // moving
-        forward.y = 0f;
-        right.y = 0f;
-        //falling
+        
+        _verticalVelocity = _characterController.isGrounded ? -.5f : -9.8f;
+
         up.x = 0f;
         up.z = 0f;
         up.y = _verticalVelocity;
+        
+        up.Normalize();
+    }
 
-        if (_horizontalVelocity == 0)
-        {
-            _animator.SetFloat (PlayerVelocity, 0.0f, 0, Time.deltaTime);
-        }
-        else if (_horizontalVelocity > 0.1 && _verticalVelocity == 0)
-        {
-            forward.Normalize();
-            right.Normalize();
-            up.Normalize();
-            
-            _desiredMoveDirection = forward * _inputY + right * _inputX;
-            _animator.SetFloat(PlayerVelocity, _horizontalVelocity, startAnimDamp, Time.deltaTime);
-            _characterController.Move(_desiredMoveDirection.normalized * (Time.deltaTime * desiredVelocity));
-        }else if (_verticalVelocity != 0)
-        {
-            _animator.SetFloat (PlayerVerticalVelocity, _verticalVelocity, startAnimDamp, Time.deltaTime);
-        }
-
-
-        if (_desiredMoveDirection != Vector3.zero)
-        {
-            transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (_desiredMoveDirection), desiredRotationSpeed);
+    private void HandleAnimation()
+    {
+        if (_horizontalVelocity >= .1f) {
+            _animator.SetFloat (PlayerVelocity, _horizontalVelocity, startAnimDamp, Time.deltaTime); 
+        } else {
+            _animator.SetFloat (PlayerVelocity, 0f, 0, Time.deltaTime);
         }
     }
 
+    private void HandleMovement()
+    {
+        var forward = _mainCameraTransform.forward;
+        var right = _mainCameraTransform.right;
+        
+        // moving
+        forward.y = 0f;
+        right.y = 0f;
+        
+        forward.Normalize();
+        right.Normalize();
+        
+        _desiredMoveDirection = forward * _inputY + right * _inputX;
+        
+        if (_desiredMoveDirection != Vector3.zero)
+        {
+            transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (_desiredMoveDirection), desiredRotationSpeed);
+            _characterController.Move(_desiredMoveDirection.normalized * (Time.deltaTime * desiredVelocity));
+        }
+    }
     private void MyOnMove(InputAction.CallbackContext context)
     {
         var movement = context.ReadValue<Vector2>().normalized;

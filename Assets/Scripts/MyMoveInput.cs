@@ -15,7 +15,7 @@ public class MyMoveInput : MonoBehaviour
     private float _inputX, _inputY;
 
     private float gravity = -9.8f;
-    private float groundedGravity = -.5f;
+    private float groundedGravity = -.09f;
 
     private Vector3 _moveDirection;
     private Vector3 _fallDirection;
@@ -90,8 +90,10 @@ public class MyMoveInput : MonoBehaviour
         }
         else
         {
-            _fallDirection.y += gravity;
+            _fallDirection.y += gravity * Time.deltaTime;
         }
+        Debug.Log(_fallDirection.y);
+        _animator.SetFloat (PlayerVerticalVelocity, _fallDirection.y, 0, Time.deltaTime);
         
     }
 

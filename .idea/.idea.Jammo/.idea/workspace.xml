@@ -22,6 +22,13 @@
     <list default="true" id="8a5ab1b1-aaf4-43b4-b6da-236d4a40b5f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jammo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jammo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/MyAnimationController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/MyAnimationController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/xbot@Falling Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/xbot@Falling Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/xbot@Falling To Landing.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/xbot@Falling To Landing.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/xbot@Jumping Up.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/xbot@Jumping Up.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jammo-Character/Models/Jammo_LowPoly.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jammo-Character/Models/Jammo_LowPoly.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/JammoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JammoScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyMoveInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyMoveInput.cs" afterDir="false" />
     </list>
@@ -39,7 +46,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://E:/VIA/S6/GMD/Jammo/Assets/Scripts/MyMoveInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/VIA/S6/GMD/Jammo/Assets/Scenes/JammoScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/VIA/S6/GMD/Jammo/Assets/Jammo-Character/Models/Jammo_LowPoly.fbx.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E147BE8A-8A8F-49C6-A0A4-A64CD2E2F53A/8b/60a8d55f/Animator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../002/My project/Assets/Scripts/CharacterControllerScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D3B66F0A-D4E3-4A55-B6EF-91AB84878193/9d/5c3e32bf/Camera.cs" root0="SKIP_HIGHLIGHTING" />
@@ -167,6 +177,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Somme refactoring" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="847" y="265" key="RollbackChangesDialog" timestamp="1651846382736">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="847" y="265" key="RollbackChangesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1651846382736" />
     <state x="618" y="325" key="VCS.ChangelistChooser" timestamp="1651481680706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -12,29 +12,24 @@ public class MyMoveInput : MonoBehaviour
     private Transform _mainCameraTransform;
 
     private float _horizontalVelocity;
-    private float _verticalVelocity;
     private float _inputX, _inputY;
 
     private float gravity = -9.8f;
     private float groundedGravity = -.5f;
-    
-    private Vector3 _desiredMoveDirection;
+
+    private Vector3 _moveDirection;
+    private Vector3 _fallDirection;
+    private Vector3 _currentMovement;
 
     private bool _isRunning = false;
     private bool _isJumping = false;
 
+    public float initialJumpVelocity;
     public float desiredVelocity = 10;
     public float desiredRotationSpeed = 0.1f;
+    public float desiredFallFactor = .1f;
 
     [Range(0, 1f)] public float startAnimDamp = 0.3f;
-
-    void handleGravity()
-    {
-        if (_characterController.isGrounded)
-        {
-            
-        }
-    }
 
     //---move---
     private PlayerInput _playerInput;
@@ -72,29 +67,37 @@ public class MyMoveInput : MonoBehaviour
     }
     void Update()
     {
-
-        _horizontalVelocity = new Vector2(_inputX, _inputY).sqrMagnitude;
-
-        HandleAnimation();
         HandleMovement();
+        HandleAnimation();
+        HandleGravity();
         
+        if (_moveDirection != Vector3.zero)
+        {
+            transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (_moveDirection), desiredRotationSpeed);
+        }
+        _currentMovement = new Vector3(_moveDirection.x, _fallDirection.y, _moveDirection.z);
+        _characterController.Move(_currentMovement.normalized * (Time.deltaTime * desiredVelocity));
     }
 
     private void HandleGravity()
     {
-        var up = _mainCameraTransform.up;
+        _fallDirection.x = 0;
+        _fallDirection.z = 0;
         
-        _verticalVelocity = _characterController.isGrounded ? -.5f : -9.8f;
-
-        up.x = 0f;
-        up.z = 0f;
-        up.y = _verticalVelocity;
+        if (_characterController.isGrounded)
+        {
+            _fallDirection.y = groundedGravity;
+        }
+        else
+        {
+            _fallDirection.y += gravity;
+        }
         
-        up.Normalize();
     }
 
     private void HandleAnimation()
     {
+        _horizontalVelocity = new Vector2(_inputX, _inputY).sqrMagnitude;
         if (_horizontalVelocity >= .1f) {
             _animator.SetFloat (PlayerVelocity, _horizontalVelocity, startAnimDamp, Time.deltaTime); 
         } else {
@@ -106,21 +109,14 @@ public class MyMoveInput : MonoBehaviour
     {
         var forward = _mainCameraTransform.forward;
         var right = _mainCameraTransform.right;
-        
-        // moving
+
         forward.y = 0f;
         right.y = 0f;
         
         forward.Normalize();
         right.Normalize();
         
-        _desiredMoveDirection = forward * _inputY + right * _inputX;
-        
-        if (_desiredMoveDirection != Vector3.zero)
-        {
-            transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (_desiredMoveDirection), desiredRotationSpeed);
-            _characterController.Move(_desiredMoveDirection.normalized * (Time.deltaTime * desiredVelocity));
-        }
+        _moveDirection = forward * _inputY + right * _inputX;
     }
     private void MyOnMove(InputAction.CallbackContext context)
     {
@@ -133,7 +129,6 @@ public class MyMoveInput : MonoBehaviour
     private void MyOnRun(InputAction.CallbackContext context)
     {
         _isRunning = context.ReadValueAsButton();
-        Debug.Log(_isRunning);
         if (_isRunning) {
             _inputY *= 2;
         } else {

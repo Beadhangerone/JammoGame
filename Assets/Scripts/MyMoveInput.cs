@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static JamoAudioManager;
 
 public class MyMoveInput : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class MyMoveInput : MonoBehaviour
     private float _horizontalVelocity;
     private float _inputX, _inputY;
 
-    private float gravity = -9.8f;
+    private float gravity = -9f;
     private float groundedGravity = -.09f;
 
     private Vector3 _moveDirection;
@@ -22,11 +23,12 @@ public class MyMoveInput : MonoBehaviour
     private Vector3 _currentMovement;
 
     private bool _isRunning = false;
+    private bool _isJumpPressed = false;
     private bool _isJumping = false;
 
     public float initialJumpVelocity;
     public float desiredVelocity = 10;
-    public float desiredRotationSpeed = 0.1f;
+    public float desiredRotationSpeed = 0.05f;
     public float desiredFallFactor = .1f;
 
     [Range(0, 1f)] public float startAnimDamp = 0.3f;
@@ -41,8 +43,11 @@ public class MyMoveInput : MonoBehaviour
     private static readonly int PlayerVelocity = Animator.StringToHash("playerVelocity");
     private static readonly int PlayerVerticalVelocity = Animator.StringToHash("playerVerticalVelocity");
 
+    private JamoAudioManager _jamoAudioManager;
     private void Awake()
     {
+        Debug.Log("jazdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        
         _animator = GetComponent<Animator>();
         _playerInput = gameObject.GetComponent<PlayerInput>();
         _playerInputActionRun = _playerInput.actions["Run"];
@@ -59,9 +64,10 @@ public class MyMoveInput : MonoBehaviour
         _playerInputActionJump.started += context => MyOnJump(context);
         _playerInputActionJump.canceled += context => MyOnJump(context);
     }
-    
+
     void Start()
     {
+        _jamoAudioManager = GetComponent<JamoAudioManager>();
         _characterController = GetComponent<CharacterController>();
         _mainCameraTransform = mainCamera.transform;
     }
@@ -70,6 +76,7 @@ public class MyMoveInput : MonoBehaviour
         HandleMovement();
         HandleAnimation();
         HandleGravity();
+        HandleJump();
         
         if (_moveDirection != Vector3.zero)
         {
@@ -77,8 +84,22 @@ public class MyMoveInput : MonoBehaviour
         }
         _currentMovement = new Vector3(_moveDirection.x, _fallDirection.y, _moveDirection.z);
         _characterController.Move(_currentMovement.normalized * (Time.deltaTime * desiredVelocity));
+        
     }
-
+    
+    private void HandleJump()
+    {
+        if (!_isJumping && _characterController.isGrounded && _isJumpPressed)
+        {
+            _isJumping = true;
+            _jamoAudioManager.PlayJump();
+            _fallDirection.y = 3.5f;
+        }else if (!_isJumpPressed && _isJumping && _characterController.isGrounded)
+        {
+            _isJumping = false;
+        }
+    }
+    
     private void HandleGravity()
     {
         _fallDirection.x = 0;
@@ -92,7 +113,6 @@ public class MyMoveInput : MonoBehaviour
         {
             _fallDirection.y += gravity * Time.deltaTime;
         }
-        Debug.Log(_fallDirection.y);
         _animator.SetFloat (PlayerVerticalVelocity, _fallDirection.y, 0, Time.deltaTime);
         
     }
@@ -140,6 +160,6 @@ public class MyMoveInput : MonoBehaviour
 
     private void MyOnJump(InputAction.CallbackContext context)
     {
-        _isJumping = context.ReadValueAsButton();
+        _isJumpPressed = context.ReadValueAsButton();
     }
 }

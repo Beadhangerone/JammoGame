@@ -46,7 +46,7 @@ public class MyMoveInput : MonoBehaviour
     private JamoAudioManager _jamoAudioManager;
     private void Awake()
     {
-        Debug.Log("jazdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        Debug.Log("LETS GOOOO");
         
         _animator = GetComponent<Animator>();
         _playerInput = gameObject.GetComponent<PlayerInput>();
@@ -137,7 +137,18 @@ public class MyMoveInput : MonoBehaviour
         
         forward.Normalize();
         right.Normalize();
-        
+
+        if ((_inputX != 0 || _inputY != 0) && _characterController.isGrounded)
+        {
+            if (_isRunning)
+            {
+                _jamoAudioManager.PlayRun();
+            }
+            else
+            {   
+                _jamoAudioManager.PlayStep();
+            }
+        }
         _moveDirection = forward * _inputY + right * _inputX;
     }
     private void MyOnMove(InputAction.CallbackContext context)

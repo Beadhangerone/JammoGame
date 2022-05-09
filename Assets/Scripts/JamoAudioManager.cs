@@ -6,8 +6,11 @@ using UnityEngine.Serialization;
 
 public class JamoAudioManager : MonoBehaviour
 {
-    private AudioSource _source;
+    private AudioSource _commonSource;
+    private AudioSource _stepSource;
     public AudioClip jump;
+    public AudioClip step;
+    private bool stepReady = true;
 
     private void Awake()
     {
@@ -16,11 +19,40 @@ public class JamoAudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _source = gameObject.AddComponent<AudioSource>();
+        _commonSource = gameObject.AddComponent<AudioSource>();
+        _stepSource = gameObject.AddComponent<AudioSource>();
+        _stepSource.loop = false;
+        _stepSource.clip = step;
+        _stepSource.pitch = 0.75f;
+        _stepSource.volume = 0.33f;
     }
 
+    void FixedUpdate()
+    {
+    }
+    
     public void PlayJump()
     {
-        _source.PlayOneShot(jump, 1f);
+        _commonSource.PlayOneShot(jump, 1f);
     }
+
+    public void PlayStep()
+    {
+        if (!_stepSource.isPlaying)
+        {
+            // _stepSource.pitch *= -1;
+            // if (_stepSource.pitch < 0)
+            //     _stepSource.timeSamples = step.samples - 1;
+            _stepSource.Play();
+        }
+
+    }
+
+    public void PlayRun()
+    {
+        _stepSource.pitch = 1f;
+        PlayStep();
+    }
+    
+    
 }

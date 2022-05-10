@@ -23,7 +23,7 @@ public class JamoAudioManager : MonoBehaviour
         _stepSource = gameObject.AddComponent<AudioSource>();
         _stepSource.loop = false;
         _stepSource.clip = step;
-        _stepSource.volume = 0.33f;
+        _stepSource.volume = 0.15f;
     }
 
     void FixedUpdate()

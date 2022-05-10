@@ -20,12 +20,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d78d35b-0488-4118-9b15-72052f7def64" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/AnimatorController_Jamo.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/AnimatorController_Jamo.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Battle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Battle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Happy.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Happy.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Relaxed.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Relaxed.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Scared.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Scared.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Running.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Running.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Walking.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Walking.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Falling To Landing.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Falling To Landing.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Fist Pump.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Fist Pump.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Jump.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Jump.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Standing.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Standing.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Victory Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Victory Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Files.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Files/eyes_vector.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Files/eyes_vector.ai.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Materials/Skybox.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Materials/Skybox.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Materials/m_ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Materials/m_ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Materials/m_jammo_eyes.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Materials/m_jammo_eyes.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Materials/m_jammo_metal.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Materials/m_jammo_metal.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Models/Jammo_LowPoly.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Models/Jammo_LowPoly.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Prefabs/Jammo_Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Prefabs/Jammo_Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/Alternates.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/Alternates/t_jammo_black.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/Alternates/t_jammo_black.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/Alternates/t_jammo_blue.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/Alternates/t_jammo_blue.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/Alternates/t_jammo_yellow.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/Alternates/t_jammo_yellow.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/jammo_eyes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/jammo_eyes.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/mixbot1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/mixbot1.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/mixbot_low_mixamo_edit1_AO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/mixbot_low_mixamo_edit1_AO.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/mixbot_low_mixamo_edit1_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/mixbot_low_mixamo_edit1_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/mixbot_low_mixamo_edit1_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/mixbot_low_mixamo_edit1_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/mixbot_low_mixamo_edit1_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Textures/mixbot_low_mixamo_edit1_Normal.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scenes/JammoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/JammoScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JamoAudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JamoAudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +103,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/JamoAudioManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Trambouline.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -71,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649106909301</updated>
       <workItem from="1649106912113" duration="1495000" />
-      <workItem from="1652188373728" duration="87000" />
+      <workItem from="1652188373728" duration="1529000" />
     </task>
     <task id="LOCAL-00001" summary="Walk and Run Sound">
       <created>1652120379546</created>
@@ -80,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652120379546</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="run and walk sound debug">
+      <created>1652188523796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652188523796</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +177,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Walk and Run Sound" />
-    <option name="LAST_COMMIT_MESSAGE" value="Walk and Run Sound" />
+    <MESSAGE value="run and walk sound debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="run and walk sound debug" />
   </component>
 </project>

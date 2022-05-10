@@ -25,6 +25,7 @@ public class MyMoveInput : MonoBehaviour
     private bool _isRunning = false;
     private bool _isJumpPressed = false;
     private bool _isJumping = false;
+    private bool _superJump = false;
 
     public float initialJumpVelocity;
     public float desiredVelocity = 10;
@@ -44,6 +45,8 @@ public class MyMoveInput : MonoBehaviour
     private static readonly int PlayerVerticalVelocity = Animator.StringToHash("playerVerticalVelocity");
 
     private JamoAudioManager _jamoAudioManager;
+   
+
     private void Awake()
     {
         Debug.Log("LETS GOOOO");
@@ -93,11 +96,25 @@ public class MyMoveInput : MonoBehaviour
         {
             _isJumping = true;
             _jamoAudioManager.PlayJump();
-            _fallDirection.y = 3.5f;
+            if (_superJump)
+            {
+                _fallDirection.y = 10f;
+            }
+            else
+            {
+                _fallDirection.y = 3.5f;    
+            }
+            
         }else if (!_isJumpPressed && _isJumping && _characterController.isGrounded)
         {
             _isJumping = false;
+            _superJump = false;
         }
+    }
+
+    public void SuperJump()
+    {
+        _superJump = true;
     }
     
     private void HandleGravity()

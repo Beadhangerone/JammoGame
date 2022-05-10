@@ -23,7 +23,6 @@ public class JamoAudioManager : MonoBehaviour
         _stepSource = gameObject.AddComponent<AudioSource>();
         _stepSource.loop = false;
         _stepSource.clip = step;
-        _stepSource.pitch = 0.75f;
         _stepSource.volume = 0.33f;
     }
 
@@ -40,6 +39,7 @@ public class JamoAudioManager : MonoBehaviour
     {
         if (!_stepSource.isPlaying)
         {
+            _stepSource.pitch = .75f;
             // _stepSource.pitch *= -1;
             // if (_stepSource.pitch < 0)
             //     _stepSource.timeSamples = step.samples - 1;

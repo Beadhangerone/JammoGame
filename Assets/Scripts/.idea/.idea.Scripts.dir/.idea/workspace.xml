@@ -20,38 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d78d35b-0488-4118-9b15-72052f7def64" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/.idea.Jammo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/.idea.Jammo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/AnimatorController_Jamo.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/AnimatorController_Jamo.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Battle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Battle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Happy.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Happy.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Relaxed.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Relaxed.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Scared.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Idle_Scared.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Running.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Running.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Walking.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Default/a_Walking.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Falling To Landing.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Falling To Landing.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Fist Pump.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Fist Pump.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Jump.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Jump.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Standing.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Standing.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Victory Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jammo-Character/Animations/Victory Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovementInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovementInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/JammoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/JammoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JamoAudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JamoAudioManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +35,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/JamoAudioManager.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/MovementInput.cs" />
       </list>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27Lklk6p5nv7AEmjYsQKqyvvBGB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -76,11 +56,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.environmentSetup" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,13 +71,23 @@
       <option name="presentableId" value="Default" />
       <updated>1649106909301</updated>
       <workItem from="1649106912113" duration="1495000" />
+      <workItem from="1652188373728" duration="87000" />
     </task>
+    <task id="LOCAL-00001" summary="Walk and Run Sound">
+      <created>1652120379546</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652120379546</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -111,5 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Walk and Run Sound" />
+    <option name="LAST_COMMIT_MESSAGE" value="Walk and Run Sound" />
   </component>
 </project>

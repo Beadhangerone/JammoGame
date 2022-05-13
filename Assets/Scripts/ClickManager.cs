@@ -14,7 +14,7 @@ public class ClickManager : MonoBehaviour
 
     public void Level1BtnClick()
     {
-        _sceneManager.LoadLevel1();
+        MySceneManager.LoadLevel1();
         Debug.Log("level 1");
     }
     

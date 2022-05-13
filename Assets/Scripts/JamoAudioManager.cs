@@ -10,7 +10,6 @@ public class JamoAudioManager : MonoBehaviour
     private AudioSource _stepSource;
     public AudioClip jump;
     public AudioClip step;
-    private bool stepReady = true;
 
     private void Awake()
     {

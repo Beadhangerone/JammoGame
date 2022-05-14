@@ -5,22 +5,15 @@ using UnityEngine;
 
 public class JammoColider : MonoBehaviour
 {
-
+    public GameObject levelManager;
+    
     private const string TrampolineTag = "Trampoline";
+    private const string FinishTag = "FinishArch";
+    
     // Start is called before the first frame update
     void Start()
     {
         
-    }
-
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-        if (collision.gameObject.CompareTag(TrampolineTag))
-        {
-            
-        }
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit)
@@ -29,6 +22,11 @@ public class JammoColider : MonoBehaviour
         if (other.CompareTag(TrampolineTag))
         {
             gameObject.GetComponent<MyMoveInput>().SuperJump();
+        }
+
+        if (other.CompareTag(FinishTag))
+        {
+            levelManager.GetComponent<MyLevelManager>().FinishLevel1();
         }
     }
 

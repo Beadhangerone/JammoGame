@@ -7,6 +7,7 @@ TagManager:
   - PlayerEyes
   - Trampoline
   - FinishArch
+  - DeadZone
   layers:
   - Default
   - TransparentFX

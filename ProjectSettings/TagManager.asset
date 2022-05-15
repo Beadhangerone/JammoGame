@@ -8,6 +8,7 @@ TagManager:
   - Trampoline
   - FinishArch
   - DeadZone
+  - Transport
   layers:
   - Default
   - TransparentFX

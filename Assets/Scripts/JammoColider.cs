@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class JammoColider : MonoBehaviour
@@ -10,6 +7,7 @@ public class JammoColider : MonoBehaviour
     private const string TrampolineTag = "Trampoline";
     private const string FinishTag = "FinishArch";
     private const string DeadTag = "DeadZone";
+    private const string TransportTag = "Transport";
     
     // Start is called before the first frame update
     void Start()
@@ -20,6 +18,8 @@ public class JammoColider : MonoBehaviour
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         GameObject other = hit.gameObject;
+        
+        //Debug.Log(other.tag);
         if (other.CompareTag(TrampolineTag))
         {
             gameObject.GetComponent<MyMoveInput>().SuperJump();
@@ -28,6 +28,11 @@ public class JammoColider : MonoBehaviour
         if (other.CompareTag(FinishTag))
         {
             levelManager.GetComponent<MyLevelManager>().FinishLevel1();
+        }
+
+        if (other.CompareTag(TransportTag))
+        {
+            //gameObject.transform.position
         }
         
         if (other.CompareTag(DeadTag))

@@ -682,6 +682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementDistance: 10
   movementAxis: 122
+  movementSpeed: 0.35
 --- !u!54 &4349890256303886706
 Rigidbody:
   m_ObjectHideFlags: 0

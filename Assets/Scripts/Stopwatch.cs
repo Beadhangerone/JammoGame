@@ -13,7 +13,7 @@ public class Stopwatch : MonoBehaviour
     private float _runningStartTime = 0f;
     private float _pauseStartTime = 0f;
     private float _elapsedPausedTime = 0f;
-    private float _totalElapsedPausedTime = 0f;
+    private float _totalElapsedPausedTime = 1f;
     private bool _running = false;
     private bool _paused = false;
     public MyTime Time { get; private set; }

@@ -56,7 +56,6 @@ public class Transport : MonoBehaviour
         }
         
         _currentMovementVector = _forthMovementVector;
-        //Debug.Log(_initialPosition+"->"+_finalPosition);
     }
 
     // Update is called once per frame
@@ -81,23 +80,17 @@ public class Transport : MonoBehaviour
                 _moveInput.externalMovement = _currentMovementVector;
             }
         }
-        //Debug.Log(currentPosition+": "+_currentMovementVector);
         gameObject.transform.Translate( _currentMovementVector * Time.deltaTime);
     }
-
-
+    
     private void OnCollisionEnter(Collision collision)
     {
         GameObject other = collision.gameObject;
-        // Debug.Log("enter "+other);
         if (other == player)
         {
             _isPlayerOnMe = true;
             _moveInput.externalMovement = _currentMovementVector;
-            
         }
-        //other.transform.SetParent(gameObject.transform, false);
-        
     }
     
     private void OnCollisionExit(Collision collision)
@@ -108,7 +101,5 @@ public class Transport : MonoBehaviour
             _isPlayerOnMe = false;
             _moveInput.externalMovement = Vector3.zero;
         }
-        other.transform.SetParent(null);
-        // Debug.Log("exit");
     }
 }

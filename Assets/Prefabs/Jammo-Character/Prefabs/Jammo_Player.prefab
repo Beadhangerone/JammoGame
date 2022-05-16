@@ -1914,10 +1914,12 @@ GameObject:
   - component: {fileID: 539745478100655087}
   - component: {fileID: 7635726066119915157}
   - component: {fileID: 4757836856755875627}
-  - component: {fileID: 4757836856755875625}
+  - component: {fileID: 6150762696023290731}
   - component: {fileID: -6102899433382272622}
+  - component: {fileID: 5844686535678584611}
+  - component: {fileID: 4757836856755875625}
   - component: {fileID: 5795404234573514314}
-  - component: {fileID: 2841416685079665839}
+  - component: {fileID: 6367891125851365297}
   m_Layer: 0
   m_Name: Jammo_Player
   m_TagString: Untagged
@@ -2004,29 +2006,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.22, z: 0}
---- !u!114 &4757836856755875625
-MonoBehaviour:
+--- !u!135 &6150762696023290731
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3541754002163558908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb6cae19ece4b848b976432ca8b3cfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  albedoList:
-  - {fileID: 2800000, guid: fb6e06c953f0d8045bc58e0f5a640f07, type: 3}
-  - {fileID: 2800000, guid: c9fd4ccfc3404b04eae3cd87e40a8e2e, type: 3}
-  - {fileID: 2800000, guid: 10c532508a2453a48aa766e69193d105, type: 3}
-  - {fileID: 2800000, guid: f61e83171850a834788a4664dbb54eae, type: 3}
-  eyeColors:
-  - {r: 0, g: 1.4666667, b: 2, a: 1}
-  - {r: 2, g: 0.25882354, b: 0.25882354, a: 1}
-  - {r: 0.72790754, g: 2, b: 0.26178014, a: 1}
-  - {r: 2, g: 0.87978274, b: 0.26178014, a: 1}
-  eyeState: 0
+  serializedVersion: 2
+  m_Radius: 0.23
+  m_Center: {x: 0, y: 0.08, z: 0.12}
 --- !u!114 &-6102899433382272622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2057,6 +2049,47 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &5844686535678584611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3541754002163558908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d556922bfa34c45b52f6ec58fd6f2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  initialJumpVelocity: 0
+  desiredVelocity: 10
+  desiredRotationSpeed: 0.1
+  desiredFallFactor: 0.1
+  startAnimDamp: 0.3
+--- !u!114 &4757836856755875625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3541754002163558908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb6cae19ece4b848b976432ca8b3cfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  albedoList:
+  - {fileID: 2800000, guid: fb6e06c953f0d8045bc58e0f5a640f07, type: 3}
+  - {fileID: 2800000, guid: c9fd4ccfc3404b04eae3cd87e40a8e2e, type: 3}
+  - {fileID: 2800000, guid: 10c532508a2453a48aa766e69193d105, type: 3}
+  - {fileID: 2800000, guid: f61e83171850a834788a4664dbb54eae, type: 3}
+  eyeColors:
+  - {r: 0, g: 1.4666667, b: 2, a: 1}
+  - {r: 2, g: 0.25882354, b: 0.25882354, a: 1}
+  - {r: 0.72790754, g: 2, b: 0.26178014, a: 1}
+  - {r: 2, g: 0.87978274, b: 0.26178014, a: 1}
+  eyeState: 0
 --- !u!114 &5795404234573514314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2071,22 +2104,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
   deadZone: {fileID: 0}
---- !u!54 &2841416685079665839
-Rigidbody:
+--- !u!114 &6367891125851365297
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3541754002163558908}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96203435db15a294387952464d43e077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump: {fileID: 8300000, guid: 55e019fc8f791584baaddd67bc315863, type: 3}
+  step: {fileID: 8300000, guid: 94431ba686854482d9d430fb637fb77e, type: 3}
 --- !u!1 &3921334144448749991
 GameObject:
   m_ObjectHideFlags: 0

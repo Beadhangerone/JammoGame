@@ -21,6 +21,7 @@ public class MyMoveInput : MonoBehaviour
     private Vector3 _moveDirection;
     private Vector3 _fallDirection;
     private Vector3 _currentMovement;
+    public Vector3 externalMovement = Vector3.zero;
 
     private bool _isRunning = false;
     private bool _isJumpPressed = false;
@@ -86,7 +87,8 @@ public class MyMoveInput : MonoBehaviour
             transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (_moveDirection), desiredRotationSpeed);
         }
         _currentMovement = new Vector3(_moveDirection.x, _fallDirection.y, _moveDirection.z);
-        _characterController.Move(_currentMovement.normalized * (Time.deltaTime * desiredVelocity));
+        
+        _characterController.Move(externalMovement * Time.deltaTime + (_currentMovement.normalized * (Time.deltaTime * desiredVelocity)));
         
     }
     

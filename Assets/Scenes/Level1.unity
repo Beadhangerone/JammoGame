@@ -1738,7 +1738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725994536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08, y: 10.12, z: 10.4}
+  m_LocalPosition: {x: -0.08, y: 10.12, z: 12.01}
   m_LocalScale: {x: 3.2743, y: 0.24223, z: 4.5397}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1878,7 +1878,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-721384
+  m_Name: pb_Mesh-1320
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2041,38 +2041,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3541754002163558908, guid: bd6ee82c5e06b3f4f86113cbf8261ae1, type: 3}
   m_PrefabInstance: {fileID: 4757836857439838588}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &813774220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813774217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15d556922bfa34c45b52f6ec58fd6f2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 963194227}
-  initialJumpVelocity: 0
-  desiredVelocity: 10
-  desiredRotationSpeed: 0.1
-  desiredFallFactor: 0.1
-  startAnimDamp: 0.3
---- !u!114 &813774225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813774217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96203435db15a294387952464d43e077, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jump: {fileID: 8300000, guid: 55e019fc8f791584baaddd67bc315863, type: 3}
-  step: {fileID: 8300000, guid: 94431ba686854482d9d430fb637fb77e, type: 3}
 --- !u!1 &815290690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,7 +2514,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.1040908, y: -0.019027026, z: 0.001991724, w: 0.9943838}
+  m_LocalRotation: {x: 0.1040908, y: -0.019027019, z: 0.0019917234, w: 0.9943838}
   m_LocalPosition: {x: 0.22952977, y: 11.99, z: -7.6156077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2688,7 +2656,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1326
+  m_Name: pb_Mesh-1344
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3114,7 +3082,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551315835}
-  m_LocalRotation: {x: 0.0860341, y: -0.019060016, z: 0.0016462172, w: 0.99610853}
+  m_LocalRotation: {x: 0.0860341, y: -0.019060018, z: 0.0016462177, w: 0.99610853}
   m_LocalPosition: {x: 0, y: 0, z: -0.0000009536743}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3289,7 +3257,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584003992}
-  m_LocalRotation: {x: 0.10409079, y: -0.019027026, z: 0.001991724, w: 0.9943838}
+  m_LocalRotation: {x: 0.10409079, y: -0.019027019, z: 0.001991723, w: 0.9943838}
   m_LocalPosition: {x: 0, y: 0, z: -0.0000009536743}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3935,9 +3903,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 796738506562868273, guid: f1a402ae8746b423ca48b2f00597572a, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349890256303886705, guid: f1a402ae8746b423ca48b2f00597572a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 813774217}
     - target: {fileID: 4349890256303886705, guid: f1a402ae8746b423ca48b2f00597572a, type: 3}
       propertyPath: movementSpeed
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4349890256303886705, guid: f1a402ae8746b423ca48b2f00597572a, type: 3}
       propertyPath: movementDistance
@@ -3993,7 +3969,7 @@ PrefabInstance:
       objectReference: {fileID: 800118924}
     - target: {fileID: 4349890256303886708, guid: f1a402ae8746b423ca48b2f00597572a, type: 3}
       propertyPath: m_VersionIndex
-      value: 3895
+      value: 3904
       objectReference: {fileID: 0}
     - target: {fileID: 4349890256303886711, guid: f1a402ae8746b423ca48b2f00597572a, type: 3}
       propertyPath: m_Mesh
@@ -4003,6 +3979,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 800118924}
+    - target: {fileID: 4349890256303886712, guid: f1a402ae8746b423ca48b2f00597572a, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349890256303886712, guid: f1a402ae8746b423ca48b2f00597572a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4349890256303886713, guid: f1a402ae8746b423ca48b2f00597572a, type: 3}
       propertyPath: m_Name
       value: Transport
@@ -4249,6 +4233,10 @@ PrefabInstance:
       propertyPath: levelManager
       value: 
       objectReference: {fileID: 61596788}
+    - target: {fileID: 5844686535678584611, guid: bd6ee82c5e06b3f4f86113cbf8261ae1, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 963194227}
     - target: {fileID: 6108489921287190553, guid: bd6ee82c5e06b3f4f86113cbf8261ae1, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

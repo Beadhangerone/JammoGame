@@ -20,7 +20,8 @@ public class JammoColider : MonoBehaviour
 
         if (other.CompareTag(DeadTag))
         {
-            _levelManager.FailLevel1();
+            
+            _levelManager.FailLevel();
         }
         deadZone.transform.position = new Vector3(transform.position.x, other.transform.position.y - 3, transform.position.z);
 

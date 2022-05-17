@@ -7,26 +7,42 @@ public class MainMenuUI : MonoBehaviour
 {
     private MyLevelManager _levelManager;
     public TMPro.TextMeshProUGUI level1Best;
+    public TMPro.TextMeshProUGUI level2Best;
+    public TMPro.TextMeshProUGUI level3Best;
 
     private void Awake()
     {
-        _levelManager = MyLevelManager.Instance;
-        level1Best.text = _levelManager.GetBestForLevel(1).GetText();
+        _levelManager = MyLevelManager.Instance; 
+        bool passed1 = _levelManager.GetBestForLevel(1) != null;
+        if (passed1)
+        {
+            level1Best.text = "PASSED";
+        }
+        bool passed2 = _levelManager.GetBestForLevel(2) != null;
+        if (passed2)
+        {
+            level2Best.text = "PASSED";
+        }
+        bool passed3 = _levelManager.GetBestForLevel(3) != null;
+        if (passed3)
+        {
+            level3Best.text = "PASSED";
+        }
+           
     }
 
     public void Level1BtnClick()
     {
-        _levelManager.LoadLevel1();
-        Debug.Log("level 1");
+        _levelManager.LoadLevel(1);
     }
     
     public void Level2BtnClick()
     {
-        Debug.Log("level 2");
+        _levelManager.LoadLevel(2);
     }
     
     public void Level3BtnClick()
     {
-        Debug.Log("level 3");
+        _levelManager.LoadLevel(3);
     }
 }

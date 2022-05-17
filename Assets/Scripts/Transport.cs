@@ -99,7 +99,7 @@ public class Transport : MonoBehaviour
             _playerMove.externalMovement = _currentMovementVector;
         }
     }
-    
+
     private void OnCollisionExit(Collision collision)
     {
         GameObject other = collision.gameObject;

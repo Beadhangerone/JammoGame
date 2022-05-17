@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MyLevelManager
 {
+    private int _currentLevel;
     private static SaveManager _saveManager;
     private static Stopwatch _stopwatch;    
 
@@ -31,11 +32,14 @@ public class MyLevelManager
         _saveManager = SaveManager.Instance;
     }
 
-    public void LoadLevel1()
+    public void LoadLevel(int level)
     {
-        SceneManager.LoadScene("Level1");
+        _stopwatch.Reset();
+        SceneManager.LoadScene("Level" +level);
+        _stopwatch.Begin();
+        _currentLevel = level;
     }
-
+    
     public void FinishLevel(int level)
     {
         _stopwatch.Pause();
@@ -48,9 +52,9 @@ public class MyLevelManager
         return _saveManager.PlayerSave.GetBestTimeForLevel(level);
     }
 
-    public void FailLevel1()
+    public void FailLevel()
     {
         _stopwatch.Reset();
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level"+_currentLevel);
     }
 }

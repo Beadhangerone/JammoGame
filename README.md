@@ -1,5 +1,6 @@
 # JammoGame
-Video Let'sPlay: https://youtu.be/xxXCRl_3GXw
+<br />
+Video Let'sPlay: https://youtu.be/xxXCRl_3GXw<br />
 This GMD project was a very interesting but at the same time challenging task, as I was
 developing it all by myself. <br />This allowed me to choose all the mechanics, dynamics and
 aesthetics of the game myself, so I chose to make a challenging game - a simple 3D platformer

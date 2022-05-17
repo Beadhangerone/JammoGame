@@ -1,5 +1,5 @@
 using System;
-
+[Serializable]
 public class MyTime
 {
     public float LapsedTime { get; set; }
@@ -24,14 +24,14 @@ public class MyTime
         return (float)(LapsedTime - System.Math.Truncate(LapsedTime));
     }
 
-    public string GetTime()
+    public string GetText()
     {
         string mins = (GetMinutes() < 10 ? "0" : "") + GetMinutes();
         string secs = (GetSeconds() < 10 ? "0" : "") + GetSeconds();
         return mins + ":" + secs;
     }
 
-    public string GetTimePrecise()
+    public string GetTextPrecise()
     {
         string mins = (GetMinutes() < 10 ? "0" : "") + GetMinutes();
         string secs = (GetSeconds() < 10 ? "0" : "") + GetSeconds();

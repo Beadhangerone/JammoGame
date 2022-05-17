@@ -50,8 +50,7 @@ public class MyMoveInput : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("LETS GOOOO");
-        
+
         _animator = GetComponent<Animator>();
         _playerInput = gameObject.GetComponent<PlayerInput>();
         _playerInputActionRun = _playerInput.actions["Run"];
@@ -101,22 +100,23 @@ public class MyMoveInput : MonoBehaviour
             if (_superJump)
             {
                 _fallDirection.y = 10f;
+                _superJump = false;
             }
             else
             {
-                _fallDirection.y = 3.5f;    
+                _fallDirection.y = 3.5f;
+                _superJump = false;
             }
             
         }else if (!_isJumpPressed && _isJumping && _characterController.isGrounded)
         {
             _isJumping = false;
-            _superJump = false;
         }
     }
 
-    public void SuperJump()
+    public void SuperJump(bool val = true)
     {
-        _superJump = true;
+        _superJump = val;
     }
     
     private void HandleGravity()

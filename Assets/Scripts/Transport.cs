@@ -23,30 +23,6 @@ public class Transport : MonoBehaviour
     private Func<Vector3, bool> _finalPositionReached;
     private Func<Vector3, bool> _initialPositionReached;
 
-    private bool CompareFinalPos(float current, float final)
-    {
-        if (movementDistance > 0)
-        {
-            return current >= final;
-        }
-        else
-        {
-            return current <= final;
-        }
-    }
-
-    private bool CompareInitialPos(float current, float initial)
-    {
-        if (movementDistance > 0)
-        {
-            return current <= initial;
-        }
-        else
-        {
-            return current >= initial;
-        }
-    }
-
     void Awake()
     {
         if (movementDistance < 0)
@@ -131,6 +107,30 @@ public class Transport : MonoBehaviour
         {
             _isPlayerOnMe = false;
             _playerMove.externalMovement = Vector3.zero;
+        }
+    }
+    
+    private bool CompareFinalPos(float current, float final)
+    {
+        if (movementDistance > 0)
+        {
+            return current >= final;
+        }
+        else
+        {
+            return current <= final;
+        }
+    }
+
+    private bool CompareInitialPos(float current, float initial)
+    {
+        if (movementDistance > 0)
+        {
+            return current <= initial;
+        }
+        else
+        {
+            return current >= initial;
         }
     }
 }

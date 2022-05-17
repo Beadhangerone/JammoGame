@@ -1,48 +1,41 @@
 using System;
 using UnityEngine;
 
-public class Stopwatch : MonoBehaviour
+public class Stopwatch
 {
-    private static Stopwatch _instance;
+    private static Stopwatch _stopwatch;
 
     public static Stopwatch Instance
     {
-        get { return _instance; }
+        get
+        {
+            if (_stopwatch == null)
+            {
+                _stopwatch = new Stopwatch();
+            }
+
+            return _stopwatch;
+        }
     }
     
     private float _runningStartTime = 0f;
     private float _pauseStartTime = 0f;
     private float _elapsedPausedTime = 0f;
     private float _totalElapsedPausedTime = 1f;
-    private bool _running = false;
-    private bool _paused = false;
+    public bool _running = false;
+    public bool _paused = false;
     public MyTime Time { get; private set; }
-    
-    public TMPro.TextMeshProUGUI timeText;
 
-    private void Awake()
-    {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-        } else {
-            _instance = this;
-        }
-    }
-    
-    private void Start()
+    private Stopwatch()
     {
         Time = new MyTime();
-        Begin();
     }
 
-    void Update()
+    public void Update()
     {
         if (_running)
         {
             Time.LapsedTime = UnityEngine.Time.time - _runningStartTime - _totalElapsedPausedTime;
-
-            timeText.text = Time.GetTime();
         }
         else if (_paused)
         {
